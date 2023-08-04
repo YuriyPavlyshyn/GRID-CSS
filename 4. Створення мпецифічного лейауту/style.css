@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    max-width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* Довгий процес створення лейаута */
+    /* grid-template-columns: repeat(11, [col] 1fr); */
+    /* grid-template-rows: repeat(15, [row] 1fr); */
+    /* grid-column-gap: 15px; */
+    /* grid-row-gap: 15px; */
+    /* padding: 10px; */
+    border: 10px solid grey;
+    /* line-height: 250px; */
+
+    /* Короткий процес створення лейаута */
+    grid-template-columns: repeat(6, [col] 1fr);
+    grid-template-rows: repeat(3, [row] 1fr);
+
+
+
+}
+
+.grid-item {
+    min-height: 80px; /* просто потрібно створити висоту айтемів, так як по горизонталі задано ширину 1fr, а висоти немає */
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+    color: white;
+    /* padding: 20px; */
+    border: 10px solid grey;
+   
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.first {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+
+/* .grid-item1 {
+    grid-column: col 5/ span 10;
+    grid-row: row 4 / span 6;
+    background-color: red;
+    z-index: 1;
+}
+
+.grid-item2 {
+    grid-column: col 1/ span 8;
+    grid-row: row 2 / span 3;
+    background-color: green;
+    z-index: 2;
+}
+
+.grid-item3 {
+    grid-column: col 1 / span 4;
+    grid-row: row 4 / span 8;
+    z-index: 3;
+    background-color: blue;
+} */
+
+/* Довгий процес для створення лейаута*/
+/* .grid-item1 {
+    grid-column: col 1 / col 5;
+    grid-row: row 1 / row 6;
+}
+
+.grid-item2 {
+    grid-column: col 5 / col 8;
+    grid-row: row 1 / row 11;
+    line-height: 550px;
+}
+
+.grid-item3 {
+    grid-column: col 8 / col 10;
+    grid-row: row 1 / row 11;
+    line-height: 550px;
+}
+
+.grid-item4 {
+    grid-column: col 10 / col 12;
+    grid-row: row 1 / row 6;
+}
+
+.grid-item5 {
+    grid-column: col 1 / col 3;
+    grid-row: row 6 / row 11;
+}
+
+.grid-item6 {
+    grid-column: col 3 / col 5;
+    grid-row: row 6 / row 11;
+}
+
+.grid-item7 {
+    grid-column: col 10 / col 12;
+    grid-row: row 6 / row 11;
+}
+
+.grid-item8 {
+    grid-column: col 1 / col 3;
+    grid-row: row 11 / row 16;
+}
+
+.grid-item9 {
+    grid-column: col 3 / col 7;
+    grid-row: row 11 / row 16;
+}
+
+.grid-item10 {
+    grid-column: col 7 / col 10;
+    grid-row: row 11 / row 16;
+}
+
+.grid-item11 {
+    grid-column: col 10 / col 12;
+    grid-row: row 11 / row 16;
+} */
+
+/* Коротший процес створення лейаута */
+.grid-item1 {
+    grid-column: col 1 / col 3;
+}
+
+.grid-item2 {
+    grid-column: col 3 / col 5;
+    grid-row: row 1 / row 3;
+    /* line-height: 550px; */
+}
+
+.grid-item3 {
+    grid-column: col 5 / col 6;
+    grid-row: row 1 / row 3;
+    /* line-height: 550px; */
+}
+
+.grid-item9 {
+    grid-column: col 2 / col 4;
+    grid-row: row 3 / row 3;
+}
+
+.grid-item10 {
+    grid-column: col 4 / col 6;
+    grid-row: row 3 / row 3 ;
+}
